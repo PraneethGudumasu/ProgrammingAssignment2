@@ -28,8 +28,8 @@ cacheSolve <- function(x, ...) {
                 return(inverse)
         }
         
-        mat.data = x$get()
-        inverse = solve(mat.data, ...)
+        matrixdata = x$get()
+        inverse = solve(matrixdata, ...)
         
         x$setinv(inverse)
         
